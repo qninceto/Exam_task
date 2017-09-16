@@ -12,7 +12,7 @@ public class Demo {
 	//formatting of the floats!!!
 	//logical errors check!!!
 	
-	public static void main(String[] args) {
+	public static void main(String[] args) throws Exception {
 
 		// create a shop//which creates an oline shop in the constructor:
 		NormalShop myShop = new NormalShop("Modern taents", "0885 698 657");

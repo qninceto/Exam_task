@@ -17,7 +17,7 @@ public class Dress extends PieceOfClothe  implements Comparable<PieceOfClothe>  
 	
 	private boolean hasZipper;
 
-	public Dress(char size, String description, float price, DressType subType, boolean hasZipper) {
+	public Dress(char size, String description, float price, DressType subType, boolean hasZipper) throws Exception {
 		super(size, description, price, subType, TypeClothing.DRESS);
 		this.hasZipper = hasZipper;
 	}

@@ -18,7 +18,7 @@ public class SwimmingSuite extends PieceOfClothe implements Comparable<PieceOfCl
 
 	private int numberParts;
 
-	public SwimmingSuite(char size, String description, float price, SSType subType, int numberParts) {
+	public SwimmingSuite(char size, String description, float price, SSType subType, int numberParts) throws Exception {
 		super(size, description, price, subType, TypeClothing.SWIMMING_SUITE);
 		this.setNumberParts(numberParts);
 	}

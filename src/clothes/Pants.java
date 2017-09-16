@@ -18,7 +18,7 @@ public class Pants extends PieceOfClothe implements Comparable<PieceOfClothe> {
 	private float shirochina;
 	private float dylzhina;
 
-	public Pants(char size, String description, float price, PantsType subType, float shirochina, float dylzhina) {
+	public Pants(char size, String description, float price, PantsType subType, float shirochina, float dylzhina) throws Exception {
 		super(size, description, price, subType, TypeClothing.PANTS);
 		this.shirochina = shirochina;///setter!!!
 		this.dylzhina = dylzhina;///setter!!!

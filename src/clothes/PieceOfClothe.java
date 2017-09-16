@@ -12,7 +12,7 @@ public abstract class PieceOfClothe {
 	private SubtypeClothing subtype;
 	private TypeClothing type;
 
-	public PieceOfClothe(char size, String description, float price, SubtypeClothing type, TypeClothing vid) {
+	public PieceOfClothe(char size, String description, float price, SubtypeClothing type, TypeClothing vid) throws Exception {
 		this.setSize(size);
 		this.setDescription(description);
 		this.setPrice(price);
@@ -37,9 +37,13 @@ public abstract class PieceOfClothe {
 		return type;
 	}
 
-	private void setPrice(float price) {
-		// validate+exception
-		this.price = price;
+	private void setPrice(float price) throws Exception {
+		if (price >= 0) {
+			this.price = price;
+		}else {
+			throw new Exception("invalid price");
+		}
+
 	}
 
 	private void setDescription(String description) {

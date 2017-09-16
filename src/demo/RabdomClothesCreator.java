@@ -10,7 +10,7 @@ import clothes.SwimmingSuite.SSType;
 
 public class RabdomClothesCreator {
 
-	public static PieceOfClothe randomClothesCreator() {
+	public static PieceOfClothe randomClothesCreator() throws Exception {
 		char[] sizes = new char[] { 'S', 'M', 'L' };
 		char size = sizes[new Random().nextInt(sizes.length)];
 		String description = "bla bla";

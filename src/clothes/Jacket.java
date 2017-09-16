@@ -17,7 +17,7 @@ public class Jacket extends PieceOfClothe  implements Comparable<PieceOfClothe> 
 
 	private boolean hasHood;
 
-	public Jacket(char size, String description, float price, JacketType subType, boolean hasHood) {
+	public Jacket(char size, String description, float price, JacketType subType, boolean hasHood) throws Exception {
 		super(size, description, price, subType, TypeClothing.JACKET);
 		this.hasHood = hasHood;
 	}
